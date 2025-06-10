@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eva Joaquina Moda Feminina</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <img src="logo-eva-adaptada.png" alt="Logo Eva Joaquina" class="logo" />
+    <h1>Moda Feminina com Identidade</h1>
+    <p>Peças exclusivas para mulheres únicas</p>
+  </header>
+
+  <section id="produtos">
+    <h2>Destaques</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.X2zXaTxAribbKsBAryFiDAHaJ5?pid=Api" alt="Conjunto Cropped">
+        <p>Conjunto Cropped – R$129,90</p>
+        <button onclick="adicionarCarrinho('Conjunto Cropped', 129.90)">Comprar</button>
+      </div>
+      <div class="card">
+        <img src="https://tse3.mm.bing.net/th/id/OIP.CtcZH3c40ZF41aC2M1ZpMAHaLL?pid=Api" alt="Cropped Vermelho">
+        <p>Cropped Vermelho – R$79,90</p>
+        <button onclick="adicionarCarrinho('Cropped Vermelho', 79.90)">Comprar</button>
+      </div>
+      <div class="card">
+        <img src="https://tse2.mm.bing.net/th/id/OIP.QISDb85bBatTMyr7Nk86kQHaR1?pid=Api" alt="Short Laranja">
+        <p>Short Laranja – R$59,90</p>
+        <button onclick="adicionarCarrinho('Short Laranja', 59.90)">Comprar</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="carrinho">
+    <h2>🛒 Carrinho</h2>
+    <ul id="lista-carrinho"></ul>
+    <p>Total: R$<span id="total">0</span></p>
+    <button onclick="finalizarPedido()">Finalizar no WhatsApp</button>
+  </section>
+
+  <footer>
+    <p>© 2025 Eva Joaquina Moda Feminina | Desenvolvido por Camila</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
