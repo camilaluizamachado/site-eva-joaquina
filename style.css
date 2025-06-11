@@ -52,20 +52,20 @@ h1, h2 {
   gap: 20px;
   margin-top: 20px;
 }
-.card {
-  background: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  padding: 15px;
-  text-align: center;
-  transition: transform 0.3s ease;
+ .card {
+  min-height: 450px; /* ou 500px se quiser mais respiro */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
+
 .card:hover {
   transform: translateY(-5px);
 }
 .card img {
-  width: 100%;
-  height: auto;
+ width: 100%;
+  height: 300px; /* ou o tamanho que encaixar melhor visualmente */
+  object-fit: cover;
   border-radius: 8px;
   margin-bottom: 10px;
 }
@@ -103,5 +103,18 @@ footer {
     flex-direction: column;
     text-align: center;
   }
+}
+
+.card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.card p {
+  margin-bottom: 12px;
+}
+
+.btn {
+  margin-top: auto;
 }
 
